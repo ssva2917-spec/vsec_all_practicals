@@ -1,0 +1,771 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f7f7fb;
+
+    color: #20202a;
+
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #11111a;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+.logo span,
+footer span {
+    color: #8b7cff;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav a {
+    color: #ddd;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #8b7cff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 75vh;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #5148a5,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #11111a,
+            #29233d
+        );
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.tagline {
+    color: #9f96ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 80px;
+
+    line-height: 0.95;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    max-width: 550px;
+
+    color: #d5d3df;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-btn {
+    display: inline-block;
+
+    background-color: #8b7cff;
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+    background-color: #7063dc;
+
+    transform: translateY(-3px);
+}
+
+
+.event-date {
+    width: 180px;
+
+    height: 180px;
+
+    border: 1px solid #7169b9;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.event-date p {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    color: #9f96ff;
+}
+
+
+.event-date span {
+    text-align: center;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading p,
+.section-label {
+    color: #7467e8;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-heading h2,
+.registration h2 {
+    font-size: 40px;
+}
+
+
+/* ================= EVENTS ================= */
+
+.events {
+    padding: 90px 8%;
+
+    background-color: white;
+}
+
+
+.event-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.event-card {
+    padding: 30px 25px;
+
+    border: 1px solid #e6e4ef;
+
+    border-radius: 15px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+
+.event-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #8b7cff;
+
+    box-shadow:
+        0 12px 30px rgba(70, 60, 150, 0.12);
+}
+
+
+.event-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.event-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.event-card p {
+    color: #6e6d78;
+
+    margin-bottom: 20px;
+}
+
+
+.event-card span {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    background-color: #f0efff;
+
+    color: #6357cf;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ================= SCHEDULE ================= */
+
+.schedule {
+    padding: 90px 8%;
+
+    background-color: #f5f4fa;
+}
+
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+th {
+    background-color: #191925;
+
+    color: white;
+
+    padding: 18px;
+
+    text-align: left;
+}
+
+
+td {
+    padding: 17px;
+
+    border-bottom: 1px solid #eeeeF3;
+
+    color: #555560;
+}
+
+
+tbody tr:hover {
+    background-color: #f7f5ff;
+}
+
+
+td:first-child {
+    font-weight: bold;
+
+    color: #7467e8;
+}
+
+
+/* Event labels */
+
+.technical,
+.creative,
+.general,
+.cultural {
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.technical {
+    background-color: #eeeaff;
+
+    color: #6357cf;
+}
+
+
+.creative {
+    background-color: #ffeef7;
+
+    color: #c34c87;
+}
+
+
+.general {
+    background-color: #eaf7ff;
+
+    color: #3681aa;
+}
+
+
+.cultural {
+    background-color: #fff3df;
+
+    color: #b87920;
+}
+
+
+/* ================= REGISTRATION ================= */
+
+.registration {
+    padding: 90px 8%;
+
+    display: flex;
+
+    gap: 70px;
+
+    background-color: white;
+}
+
+
+.registration-info {
+    flex: 1;
+
+    padding-top: 30px;
+}
+
+
+.registration h2 {
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.registration-info > p {
+    color: #666570;
+
+    max-width: 500px;
+}
+
+
+.highlight {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-left: 4px solid #8b7cff;
+
+    background-color: #f5f3ff;
+
+    max-width: 450px;
+}
+
+
+.highlight strong {
+    color: #5145bb;
+}
+
+
+.highlight p {
+    color: #666570;
+
+    margin-top: 5px;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+    flex: 1;
+
+    max-width: 600px;
+
+    padding: 35px;
+
+    background-color: #f7f7fb;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e4ee;
+}
+
+
+form h3 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d8d6e2;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8b7cff;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+/* RADIO BUTTONS */
+
+.radio-group {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.radio-group label {
+    font-weight: normal;
+
+    margin-top: 5px;
+}
+
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+
+/* CHECKBOX */
+
+.checkbox {
+    font-weight: normal;
+
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+}
+
+
+.checkbox input {
+    width: auto;
+}
+
+
+/* SUBMIT BUTTON */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #7467e8;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #5c50c7;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 45px 8%;
+
+    background-color: #11111a;
+
+    color: #aaa8b5;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+footer h2 {
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .event-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration-info,
+    form {
+        max-width: none;
+
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        min-height: 70vh;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+
+        padding: 60px 6%;
+    }
+
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+
+    .event-date {
+        width: 130px;
+
+        height: 130px;
+    }
+
+
+    .event-date p {
+        font-size: 45px;
+    }
+
+
+    .events,
+    .schedule,
+    .registration {
+        padding: 60px 6%;
+    }
+
+
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .registration {
+        gap: 40px;
+    }
+
+
+    form {
+        padding: 25px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

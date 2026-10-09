@@ -1,0 +1,545 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f6fa;
+
+    color: #20212b;
+
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+
+    padding: 0 8%;
+
+    background-color: #151622;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.logo span,
+footer span {
+    color: #6c63ff;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav a {
+    color: #d8d8e0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #8d86ff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 65vh;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #4d47a7,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #151622,
+            #292842
+        );
+}
+
+
+.hero > div {
+    max-width: 700px;
+}
+
+
+.tagline,
+.section-heading p {
+    color: #7770ee;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero .tagline {
+    color: #aaa5ff;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p:not(.tagline) {
+    color: #d0ceda;
+
+    font-size: 18px;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-btn {
+    display: inline-block;
+
+    background-color: #6c63ff;
+
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.hero-btn:hover {
+    background-color: #554dc9;
+}
+
+
+/* ================= COMMON SECTIONS ================= */
+
+.result-section,
+.students-section {
+    padding: 90px 8%;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+    max-width: 950px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.form-grid,
+.marks-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d9d8e3;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #6c63ff;
+}
+
+
+.marks-heading {
+    margin-top: 35px;
+
+    margin-bottom: 20px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e6e5eb;
+}
+
+
+.marks-heading h3 {
+    font-size: 22px;
+}
+
+
+.marks-heading p {
+    color: #777;
+}
+
+
+button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #6c63ff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #554dc9;
+}
+
+
+/* ================= TABLE ================= */
+
+.students-section {
+    background-color: #f0eff7;
+}
+
+
+.table-container {
+    overflow-x: auto;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 750px;
+}
+
+
+th {
+    background-color: #191925;
+
+    color: white;
+
+    padding: 17px;
+
+    text-align: left;
+}
+
+
+td {
+    padding: 15px;
+
+    border-bottom: 1px solid #eeeeF3;
+}
+
+
+tbody tr:hover {
+    background-color: #f8f7ff;
+}
+
+
+#emptyMessage {
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 20px;
+}
+
+
+/* ================= TOPPER ================= */
+
+.topper-section {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #161625,
+            #302c55
+        );
+}
+
+
+.topper-card {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border: 1px solid #5d5790;
+
+    border-radius: 18px;
+
+    color: white;
+}
+
+
+.topper-card .tagline {
+    color: #aaa5ff;
+}
+
+
+.topper-card h2 {
+    font-size: 36px;
+
+    margin: 10px 0;
+}
+
+
+.topper-card p:not(.tagline) {
+    color: #c9c7d5;
+}
+
+
+.topper-score {
+    margin: 25px auto 0;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-color: #6c63ff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.topper-score span {
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
+.topper-score small {
+    color: #e8e7ff;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px 8%;
+
+    background-color: #11111a;
+
+    color: #aaa8b5;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+footer h3 {
+    color: white;
+
+    font-size: 22px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .result-section,
+    .students-section,
+    .topper-section {
+        padding: 60px 6%;
+    }
+
+
+    form {
+        padding: 25px;
+    }
+
+
+    .form-grid,
+    .marks-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CampusConnect | College Fest</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="logo">Campus<span>Connect</span></div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="tagline">KBT COLLEGE PRESENTS</p>
+
+          <h1>
+            IGNITE<br />
+            2026
+          </h1>
+
+          <p class="hero-text">
+            The annual college festival celebrating technology, creativity,
+            music and talent.
+          </p>
+
+          <a href="#register" class="hero-btn"> Register Now </a>
+        </div>
+
+        <div class="event-date">
+          <p>18</p>
+          <span>OCTOBER<br />2026</span>
+        </div>
+      </section>
+
+      <!-- ================= EVENTS ================= -->
+
+      <section class="events" id="events">
+        <div class="section-heading">
+          <p>WHAT'S HAPPENING</p>
+
+          <h2>Explore the Events</h2>
+        </div>
+
+        <div class="event-container">
+          <article class="event-card">
+            <div class="event-icon">💻</div>
+
+            <h3>CodeStorm</h3>
+
+            <p>
+              Put your coding skills to the test in our exciting programming
+              challenge.
+            </p>
+
+            <span> Technical </span>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">🎨</div>
+
+            <h3>DesignX</h3>
+
+            <p>
+              Show your creativity through posters, UI designs and digital
+              artwork.
+            </p>
+
+            <span> Creative </span>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">🎤</div>
+
+            <h3>Battle of Bands</h3>
+
+            <p>
+              A high-energy musical showdown featuring talented student
+              performers.
+            </p>
+
+            <span> Cultural </span>
+          </article>
+
+          <article class="event-card">
+            <div class="event-icon">🧠</div>
+
+            <h3>Quiz Mania</h3>
+
+            <p>
+              Test your knowledge across technology, entertainment and current
+              affairs.
+            </p>
+
+            <span> General </span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= SCHEDULE TABLE ================= -->
+
+      <section class="schedule" id="schedule">
+        <div class="section-heading">
+          <p>EVENT TIMELINE</p>
+
+          <h2>Festival Schedule</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Venue</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>09:00 AM</td>
+
+                <td>Opening Ceremony</td>
+
+                <td>Main Auditorium</td>
+
+                <td>
+                  <span class="technical"> General </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>10:00 AM</td>
+
+                <td>CodeStorm</td>
+
+                <td>Computer Lab</td>
+
+                <td>
+                  <span class="technical"> Technical </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>12:00 PM</td>
+
+                <td>DesignX</td>
+
+                <td>Seminar Hall</td>
+
+                <td>
+                  <span class="creative"> Creative </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>03:00 PM</td>
+
+                <td>Quiz Mania</td>
+
+                <td>Room 204</td>
+
+                <td>
+                  <span class="general"> General </span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>06:00 PM</td>
+
+                <td>Battle of Bands</td>
+
+                <td>Open Ground</td>
+
+                <td>
+                  <span class="cultural"> Cultural </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= REGISTRATION ================= -->
+
+      <section class="registration" id="register">
+        <div class="registration-info">
+          <p class="section-label">JOIN THE FEST</p>
+
+          <h2>Ready to be part of IGNITE 2026?</h2>
+
+          <p>
+            Fill in your details and select your preferred event. Your
+            registration will be confirmed by the organizing team.
+          </p>
+
+          <div class="highlight">
+            <strong> Early Bird Registration </strong>
+
+            <p>Register before 10 October and get priority entry.</p>
+          </div>
+        </div>
+
+        <!-- ================= FORM ================= -->
+
+        <form>
+          <h3>Participant Registration</h3>
+
+          <!-- NAME -->
+
+          <label for="name"> Full Name </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <!-- EMAIL -->
+
+          <label for="email"> Email Address </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+
+          <!-- PHONE -->
+
+          <label for="phone"> Phone Number </label>
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone number"
+            required
+          />
+
+          <!-- ROLL NUMBER -->
+
+          <label for="roll"> College Roll Number </label>
+
+          <input
+            type="text"
+            id="roll"
+            name="roll"
+            placeholder="Enter roll number"
+            required
+          />
+
+          <!-- DEPARTMENT -->
+
+          <label for="department"> Department </label>
+
+          <select id="department" name="department" required>
+            <option value="">Select department</option>
+
+            <option>Information Technology</option>
+
+            <option>Computer Engineering</option>
+
+            <option>Mechanical Engineering</option>
+
+            <option>Electronics Engineering</option>
+
+            <option>Civil Engineering</option>
+          </select>
+
+          <!-- EVENT -->
+
+          <label for="event"> Select Event </label>
+
+          <select id="event" name="event" required>
+            <option value="">Choose an event</option>
+
+            <option>CodeStorm</option>
+
+            <option>DesignX</option>
+
+            <option>Battle of Bands</option>
+
+            <option>Quiz Mania</option>
+          </select>
+
+          <!-- GENDER -->
+
+          <label> Gender </label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Other
+            </label>
+          </div>
+
+          <!-- MESSAGE -->
+
+          <label for="message"> Message </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Any questions or special requirements?"
+          ></textarea>
+
+          <!-- CHECKBOX -->
+
+          <label class="checkbox">
+            <input type="checkbox" required />
+
+            I agree to the event guidelines.
+          </label>
+
+          <button type="submit">Complete Registration</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div>
+        <h2>Campus<span>Connect</span></h2>
+
+        <p>Where campus life comes alive.</p>
+      </div>
+
+      <div>
+        <p>📍 KBT College, Nashik</p>
+
+        <p>✉ ignite@campusconnect.in</p>
+      </div>
+
+      <div>
+        <p>© 2026 CampusConnect</p>
+      </div>
+    </footer>
+  </body>
+</html>

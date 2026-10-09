@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="logo">Edu<span>Track</span></div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#result">Results</a>
+        <a href="#students">Students</a>
+        <a href="#topper">Topper</a>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero" id="home">
+        <div>
+          <p class="tagline">STUDENT PERFORMANCE PORTAL</p>
+
+          <h1>Student Result Management System</h1>
+
+          <p>
+            Add student marks, calculate results instantly and identify the
+            class topper.
+          </p>
+
+          <a href="#result" class="hero-btn"> Enter Results </a>
+        </div>
+      </section>
+
+      <!-- ================= RESULT FORM ================= -->
+
+      <section class="result-section" id="result">
+        <div class="section-heading">
+          <p>RESULT ENTRY</p>
+
+          <h2>Enter Student Details</h2>
+        </div>
+
+        <form id="studentForm">
+          <div class="form-grid">
+            <!-- NAME -->
+
+            <div class="form-group">
+              <label for="name"> Student Name </label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter student name"
+                required
+              />
+            </div>
+
+            <!-- ROLL NUMBER -->
+
+            <div class="form-group">
+              <label for="rollNo"> Roll Number </label>
+
+              <input
+                type="text"
+                id="rollNo"
+                placeholder="Enter roll number"
+                required
+              />
+            </div>
+
+            <!-- DEPARTMENT -->
+
+            <div class="form-group">
+              <label for="department"> Department </label>
+
+              <select id="department" required>
+                <option value="">Select Department</option>
+
+                <option>Information Technology</option>
+
+                <option>Computer Engineering</option>
+
+                <option>Electronics Engineering</option>
+
+                <option>Mechanical Engineering</option>
+
+                <option>Civil Engineering</option>
+              </select>
+            </div>
+
+            <!-- SEMESTER -->
+
+            <div class="form-group">
+              <label for="semester"> Semester </label>
+
+              <select id="semester" required>
+                <option value="">Select Semester</option>
+
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                <option>Semester 7</option>
+                <option>Semester 8</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ================= MARKS ================= -->
+
+          <div class="marks-heading">
+            <h3>Subject Marks</h3>
+
+            <p>Enter marks out of 100</p>
+          </div>
+
+          <div class="marks-grid">
+            <div class="form-group">
+              <label for="subject1"> Data Structures </label>
+
+              <input type="number" id="subject1" min="0" max="100" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject2"> Database Management </label>
+
+              <input type="number" id="subject2" min="0" max="100" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject3"> Computer Networks </label>
+
+              <input type="number" id="subject3" min="0" max="100" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject4"> Web Development </label>
+
+              <input type="number" id="subject4" min="0" max="100" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject5"> Mathematics </label>
+
+              <input type="number" id="subject5" min="0" max="100" required />
+            </div>
+          </div>
+
+          <button type="submit">Add Student Result</button>
+        </form>
+      </section>
+
+      <!-- ================= STUDENT TABLE ================= -->
+
+      <section class="students-section" id="students">
+        <div class="section-heading">
+          <p>STUDENT RECORDS</p>
+
+          <h2>Result Records</h2>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Roll No.</th>
+
+                <th>Name</th>
+
+                <th>Department</th>
+
+                <th>Total</th>
+
+                <th>Percentage</th>
+
+                <th>Grade</th>
+              </tr>
+            </thead>
+
+            <tbody id="studentTableBody">
+              <!-- JavaScript will add rows here -->
+            </tbody>
+          </table>
+        </div>
+
+        <p id="emptyMessage">No student records added yet.</p>
+      </section>
+
+      <!-- ================= TOPPER ================= -->
+
+      <section class="topper-section" id="topper">
+        <div class="topper-card">
+          <p class="tagline">⭐ CLASS TOPPER</p>
+
+          <h2 id="topperName">No topper yet</h2>
+
+          <p id="topperDetails">Add student results to identify the topper.</p>
+
+          <div class="topper-score">
+            <span id="topperPercentage"> 0% </span>
+
+            <small> Percentage </small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <h3>Edu<span>Track</span></h3>
+
+      <p>Student Result Management System</p>
+
+      <p>© 2026 EduTrack</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

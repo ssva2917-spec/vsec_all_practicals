@@ -1,0 +1,521 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #20232a;
+
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+
+    padding: 0 8%;
+
+    background-color: #16181d;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.logo span,
+footer span {
+    color: #4ecdc4;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav a {
+    color: #d5d7dc;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #4ecdc4;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 45vh;
+
+    padding: 70px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            #287c78,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #16181d,
+            #283238
+        );
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.tagline {
+    color: #4ecdc4;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content > p:not(.tagline) {
+    color: #cdd1d5;
+
+    font-size: 18px;
+
+    max-width: 600px;
+}
+
+
+/* ================= REGISTRATION ================= */
+
+.registration {
+    padding: 80px 8%;
+
+    display: flex;
+
+    gap: 60px;
+
+    align-items: flex-start;
+}
+
+
+.form-container {
+    flex: 1;
+
+    max-width: 650px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.form-heading {
+    margin-bottom: 30px;
+}
+
+
+.form-heading p {
+    color: #199d95;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.form-heading h2 {
+    font-size: 34px;
+
+    margin: 5px 0;
+}
+
+
+.form-heading span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group > label {
+    display: block;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d9dce1;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #4ecdc4;
+
+    box-shadow:
+        0 0 0 3px rgba(78, 205, 196, 0.12);
+}
+
+
+/* ================= ERROR ================= */
+
+small {
+    display: block;
+
+    color: #e04b4b;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    min-height: 18px;
+}
+
+
+.error-input {
+    border-color: #e04b4b !important;
+
+    background-color: #fff7f7;
+}
+
+
+.success-input {
+    border-color: #36a269 !important;
+}
+
+
+/* ================= RADIO ================= */
+
+.radio-group {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.radio-group label {
+    font-weight: normal;
+
+    font-size: 14px;
+}
+
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+
+/* ================= TERMS ================= */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 20px 0;
+}
+
+
+.terms input {
+    width: auto;
+}
+
+
+.terms label {
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+/* ================= BUTTON ================= */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #199d95;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #147d77;
+}
+
+
+/* ================= SUCCESS ================= */
+
+#successMessage {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #23804f;
+}
+
+
+/* ================= ASIDE ================= */
+
+aside {
+    flex: 1;
+
+    max-width: 450px;
+
+    background-color: #20252a;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 40px;
+}
+
+
+.aside-content h2 {
+    font-size: 35px;
+
+    line-height: 1.2;
+
+    margin: 10px 0 20px;
+}
+
+
+.aside-content > p:not(.tagline) {
+    color: #bfc4c8;
+
+    margin-bottom: 30px;
+}
+
+
+.benefit {
+    padding: 18px 0;
+
+    border-top: 1px solid #3c4247;
+}
+
+
+.benefit strong {
+    display: block;
+
+    color: #4ecdc4;
+
+    margin-bottom: 5px;
+}
+
+
+.benefit span {
+    display: block;
+
+    color: #c1c4c7;
+
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px 8%;
+
+    background-color: #16181d;
+
+    color: #aaaeb4;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+footer h3 {
+    color: white;
+
+    font-size: 22px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 800px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .registration {
+        padding: 60px 6%;
+
+        flex-direction: column;
+    }
+
+
+    .form-container,
+    aside {
+        max-width: none;
+
+        width: 100%;
+    }
+
+
+    .form-container {
+        padding: 25px;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

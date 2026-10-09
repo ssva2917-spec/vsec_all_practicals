@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Employee Registration</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <div class="logo">Work<span>Hub</span></div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#registration">Registration</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="tagline">EMPLOYEE ONBOARDING PORTAL</p>
+
+          <h1>Build your future with us.</h1>
+
+          <p>
+            Register your employee profile and take the first step towards
+            becoming part of our team.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= REGISTRATION ================= -->
+
+      <section class="registration" id="registration">
+        <div class="form-container">
+          <div class="form-heading">
+            <p>EMPLOYEE REGISTRATION</p>
+
+            <h2>Create your profile</h2>
+
+            <span> All fields are required. </span>
+          </div>
+
+          <!-- FORM -->
+
+          <form id="employeeForm">
+            <!-- NAME -->
+
+            <div class="form-group">
+              <label for="name"> Full Name </label>
+
+              <input type="text" id="name" placeholder="Enter your full name" />
+
+              <small id="nameError"> </small>
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="example@company.com"
+              />
+
+              <small id="emailError"> </small>
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="form-group">
+              <label for="password"> Password </label>
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+              />
+
+              <small id="passwordError"> </small>
+            </div>
+
+            <!-- PHONE -->
+
+            <div class="form-group">
+              <label for="phone"> Phone Number </label>
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="10-digit phone number"
+              />
+
+              <small id="phoneError"> </small>
+            </div>
+
+            <!-- DEPARTMENT -->
+
+            <div class="form-group">
+              <label for="department"> Department </label>
+
+              <select id="department">
+                <option value="">Select Department</option>
+
+                <option value="IT">Information Technology</option>
+
+                <option value="HR">Human Resources</option>
+
+                <option value="Finance">Finance</option>
+
+                <option value="Marketing">Marketing</option>
+
+                <option value="Operations">Operations</option>
+              </select>
+
+              <small id="departmentError"> </small>
+            </div>
+
+            <!-- GENDER -->
+
+            <div class="form-group">
+              <label> Gender </label>
+
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gender" value="Male" />
+                  Male
+                </label>
+
+                <label>
+                  <input type="radio" name="gender" value="Female" />
+                  Female
+                </label>
+
+                <label>
+                  <input type="radio" name="gender" value="Other" />
+                  Other
+                </label>
+              </div>
+            </div>
+
+            <!-- TERMS -->
+
+            <div class="terms">
+              <input type="checkbox" id="terms" />
+
+              <label for="terms">
+                I agree to the employee registration guidelines.
+              </label>
+            </div>
+
+            <!-- SUBMIT -->
+
+            <button type="submit">Register Employee</button>
+
+            <!-- SUCCESS MESSAGE -->
+
+            <div id="successMessage"></div>
+          </form>
+        </div>
+
+        <!-- ================= SIDE INFORMATION ================= -->
+
+        <aside>
+          <div class="aside-content">
+            <p class="tagline">WHY JOIN US?</p>
+
+            <h2>More than just a workplace.</h2>
+
+            <p>
+              We believe great teams are built by people who are given the
+              freedom to learn, create and grow.
+            </p>
+
+            <div class="benefit">
+              <strong> ✓ Learning & Development </strong>
+
+              <span> Continuous opportunities to improve your skills. </span>
+            </div>
+
+            <div class="benefit">
+              <strong> ✓ Collaborative Culture </strong>
+
+              <span> Work with talented people across different teams. </span>
+            </div>
+
+            <div class="benefit">
+              <strong> ✓ Career Growth </strong>
+
+              <span> Build a meaningful career with us. </span>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="about">
+      <div>
+        <h3>Work<span>Hub</span></h3>
+
+        <p>Employee Onboarding Portal</p>
+      </div>
+
+      <p>© 2026 WorkHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
