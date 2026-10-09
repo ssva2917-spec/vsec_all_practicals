@@ -1,0 +1,1 @@
+# vsec_all_practicals
